@@ -16,6 +16,12 @@ h1 {
     color: #DDD;
 }
 
+#powered-by{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    color: #DDD;
+}
+
 .motion-gif {
     max-width: 3rem;
     display: inline-block;;

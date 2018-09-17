@@ -83,7 +83,8 @@ function buildGiphyQueryURL(movieTitle) {
 function updateGifsView(GIPHYdata) {
     console.log(GIPHYdata);
     console.log("------------------------------------");
-
+    $('#gifs-view').empty();
+    
     var results = GIPHYdata.data;
     for (var i = 0; i < results.length; i++) {
         var gifDiv = $("<div class='my-3'>");
