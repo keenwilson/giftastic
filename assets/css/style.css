@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #333;
+    color: #232526;
     background-color: #f9def2; 
     background-image: linear-gradient(90deg, #f9def2, #ebf7f8); 
 }
@@ -12,21 +12,24 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-weight: 400;
-    color: #fff;
+    font-weight: 300;
+    color: #DDD;
 }
 
-#tickets-motion {
+.motion-gif {
     max-width: 3rem;
+    display: inline-block;;
 }
 
-#header {
-
-}
-
-#form-add-movie {
+#add-movie-form {
     background-color: #fed9e4; 
-    background-image: linear-gradient(#fed9e4, #fed2f0, #ffffff); 
+    /*background-image: linear-gradient(#fed9e4, #fed2f0, #ffffff); */
+    background-image: url("../images/spilled_popcorn_full.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 400px;;
+    color: #DDD;
+
 }
 
 .movie-poster {
@@ -42,17 +45,11 @@ h1 {
 }
 
 #movies-title {
-    background-color: #fffbed;
-    background-image: linear-gradient(23deg, #fffbed, #fee9f8, #fffbff)
+    background-color: #EEE;
+    /* background-image: linear-gradient(23deg,#fd64a2, #fffbed, #fee9f8, #fffbff) */
 
 }
 
-#add-movie-form {
-    background-color: #ffd2de; 
-    background-image: linear-gradient(78deg, #fd9391, #ffd2de); 
-    color: #ffffff;
-
-}
 
 #display-result {
     max-height: 400px;
@@ -67,7 +64,11 @@ h1 {
 }
 #header-jumbotron {
     padding: 1rem 1rem !important;
-    background-color: #fed9e4; 
-    background-image: linear-gradient(75deg, #fd9391, #fd64a2); 
+    background-color: #232526; 
+    background-image: linear-gradient(45deg, #232526, #414345); 
 
+}
+
+#add-a-movie-title {
+    text-shadow: 2px 2px 8px #232526;
 }

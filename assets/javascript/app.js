@@ -1,7 +1,7 @@
 // FUNCTIONS to render movie titles from our topics array
 // ==========================================================
 
-var movies = ["love actually", "50 first dates", "notting hill", "maid in manhattan", "silver linings playbook", "500 days of summer"];
+var movies = ["crazy rich asians", "love actually", "50 first dates", "notting hill", "maid in manhattan", "silver linings playbook", "500 days of summer"];
 
 function renderButtons() {
     $('#buttons-view').empty();

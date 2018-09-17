@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GifTastic</title>
+    <title>Movies GifTastic | Giphy & OMBs APIs</title>
     <!-- Link Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300|Roboto:300" rel="stylesheet">
     <!-- Link Font Awesome -->
@@ -25,29 +25,31 @@
     <div class="container">
         <div class="row">
             <div id="header-jumbotron" class="col-sm-12 jumbotron mb-0" >
-                <img class="img-fluid float-left" src="assets/images/tickets_motion.webp" alt="tickets motion" id="tickets-motion" />
+                <img class="motion-gif img-fluid float-left" src="assets/images/tickets_motion.webp" alt="tickets motion" id="tickets-motion" />
                 <h1 class="text-center text-uppercase float-left">Movies Gif-Tastics</h1>
             </div>
         </div>
 
         <div id="movies-title" class="row px-3 py-3">
-            <div class="col-sm-12 col-md-9">
-                <h3> Featured Movies: </h3>
+            <div class="col-sm-12 col-md-8">
+                <h4> Featured Movies: </h4>
                 <div id="buttons-view">
                     <!-- Movie Titles will be added here. -->
-                </div>
+                    
+                </div> 
             </div>
-            <div id="add-movie-form"  class="col-sm-12 col-md-3 card py-2">
+            <div id="add-movie-form"  class="col-sm-12 col-md-4 py-2">
                 <form role="form">
                     <div class="form-group">
                         <label for="c">
-                            <h3>Add a Movie Title</h3>
+                                <img class="motion-gif" src="assets/images/popcorn_motion.webp" alt="popcorn motion" id="popcorn-motion" />
+                                <h5 id="add-a-movie-title">Add a Movie Title</h5>
                         </label>
                         <input type="text" id="movie-input" class="form-control mb-2">
                     </div>
-                        <button id="add-movie" type="submit" class="btn btn-outline-light btn-sm mr-2"><i class="fas fa-film"></i> Add a Movie</button>
+                        <button id="add-movie" type="submit" class="btn btn-light btn-sm mr-2"><i class="fas fa-film"></i> Add a Movie</button>
 
-                        <button class="btn btn-outline-light btn-sm " id="clear-all"><i class="fas fa-eraser"></i> Clear Results</button>
+                        <button class="btn btn-light btn-sm " id="clear-all"><i class="fas fa-eraser"></i> Clear Results</button>
                     
                 </form>
             </div>
