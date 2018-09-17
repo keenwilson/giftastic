@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GifTastic</title>
+    <!-- Link Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300|Roboto:300" rel="stylesheet">
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <!-- Link CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Link Customized CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="header-jumbotron" class="col-sm-12 jumbotron mb-0" >
+                <img class="img-fluid float-left" src="assets/images/tickets_motion.webp" alt="tickets motion" id="tickets-motion" />
+                <h1 class="text-center text-uppercase float-left">Movies Gif-Tastics</h1>
+            </div>
+        </div>
+
+        <div id="movies-title" class="row px-3 py-3">
+            <div class="col-sm-12 col-md-9">
+                <h3> Featured Movies: </h3>
+                <div id="buttons-view">
+                    <!-- Movie Titles will be added here. -->
+                </div>
+            </div>
+            <div id="add-movie-form"  class="col-sm-12 col-md-3 card py-2">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="c">
+                            <h3>Add a Movie Title</h3>
+                        </label>
+                        <input type="text" id="movie-input" class="form-control mb-2">
+                    </div>
+                        <button id="add-movie" type="submit" class="btn btn-outline-light btn-sm mr-2"><i class="fas fa-film"></i> Add a Movie</button>
+
+                        <button class="btn btn-outline-light btn-sm " id="clear-all"><i class="fas fa-eraser"></i> Clear Results</button>
+                    
+                </form>
+            </div>
+        </div>
+
+        <div id="display-result" class="row px-3 py-3">
+            <div id="movies-view" class="col-sm-7 ">
+                <!-- Display Movie Info from Omdb API here -->
+                <div class="row">
+                    <div id="poster-view" class="col-md-4 pr-3">
+                        <!-- Poster -->
+                    </div>
+                    <div id="movie-info-view" class="col-md-8">
+                        <!-- Movie Info -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="gifs-view" class="col-sm-5">
+                <!-- Display Gifs from GIPHY API here -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <hr>
+                <small>“Everything I learned I learned from the movies.” ― Audrey Hepburn</small>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Link jQuery -- jQuery must come first, then Popper.js, and then our JavaScript plugins.-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- Link JavaScript -->
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
