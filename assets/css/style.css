@@ -28,7 +28,7 @@ h3 {
 }
 
 #add-movie-form {
-    background-color: #fed9e4; 
+
     /*background-image: linear-gradient(#fed9e4, #fed2f0, #ffffff); */
     background-image: url("../images/spilled_popcorn_full.jpg");
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ h3 {
 
 
 #display-result {
-    max-height: 400px;
+    /*max-height: 400px;*/
     overflow: scroll;
     background-color: #f9dde3;
     background-image: linear-gradient(#ffffff, #f9dde3, #bab8d4)
@@ -67,7 +67,7 @@ h3 {
     min-height: 400px;
 }
 #movie-info-view {
-    max-height: 400px;
+    /*max-height: 400px;*/
     overflow: scroll;
 }
 #header-jumbotron {
@@ -93,6 +93,7 @@ h3 {
 }
 
 #fav-gif-result{
-    height: 280px;
-    overflow-x:scroll;
+    /*height: 280px; */
+    overflow: scroll;
+    background-image: linear-gradient(15deg, #f5eff4, #fed2f0, #ddf6fd)
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Movies GifTastic | Giphy & OMBs APIs</title>
+    <title>Movies GIF-tastic | Giphy & OMBs APIs</title>
     <!-- Link Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300|Roboto:300" rel="stylesheet">
     <!-- Link Font Awesome -->
@@ -23,6 +23,7 @@
 
 <body>
     <div class="container-fluid">
+        <!-- Row 1: Header -->
         <div class="row">
             <div id="header-jumbotron" class="col-sm-12 jumbotron mb-0">
                 <img class="motion-gif img-fluid float-left" src="assets/images/tickets_motion.webp" alt="tickets motion"
@@ -34,72 +35,88 @@
             </div>
         </div>
 
+        <!-- Row 2: Movie Titles and 'Add a Movie' -->
         <div id="movies-title" class="row px-3 py-3">
             <div class="col-sm-12 col-md-9">
-                <h5><i class="fas fa-film"></i> Featured Movies: </h5>
+                <h6><i class="fas fa-film"></i> Featured Movies: </h6>
                 <div id="buttons-view">
-                    <!-- Movie Titles will be added here. -->
-
+                    <!-- Original Movie Titles will be added here. -->
                 </div>
+                <hr>
+                <h6><i class="fas fa-film"></i> Your Movies: </h6>
+
+
+                <div id="added-movie-buttons-view">
+                    <!-- Added Movie Titles will be added here. -->
+                </div>
+                <hr>
             </div>
             <div id="add-movie-form" class="col-sm-6 col-md-3 py-2">
                 <form role="form">
                     <div class="form-group">
                         <label for="c">
-                            <img class="motion-gif float-left" src="assets/images/popcorn_motion.webp" alt="popcorn motion" id="popcorn-motion" />
+                            <img class="motion-gif float-left" src="assets/images/popcorn_motion.webp" alt="popcorn motion"
+                                id="popcorn-motion" />
                             <h5 id="add-a-movie-title" class="float-left">Add a Movie Title</h5>
                         </label>
                         <input type="text" id="movie-input" class="form-control mb-2">
                     </div>
                     <button id="add-movie" type="submit" class="btn btn-light btn-sm mr-2 mb-2"><i class="fas fa-film"></i>
                         Add a Movie</button>
-
-                    <button class="btn btn-light btn-sm " id="clear-all"><i class="fas fa-eraser"></i> Clear Results</button>
-
+                    <!-- <button class="btn btn-light btn-sm float-right " id="clear-all"><i class="fas fa-eraser"></i>
+                        Clear GIF-tastic Result</button> -->
                 </form>
             </div>
         </div>
 
+        <!-- Row 3: Header for GIF-tastic Result -->
         <div id="display-result" class="row px-3 py-3">
-            <div id="movies-view" class="col-sm-12 col-md-4 ">
-
-                <!-- Display Movie Info from Omdb API here -->
-                <div class="row">
-                    <div id="poster-view" class="col-sm-12 col-md-5 pr-3">
-                        <!-- Poster -->
+            <div class="col-12">
+                <h6><i class="far fa-grin-stars"></i> GIF-tastic Result:</h6>
+                <hr>
+            </div>
+            <!-- Row 4: Display GIF-tastic Result -->
+            <div class="row">
+                <div id="movies-view" class="col-sm-12 col-md-4 ">
+                    <!-- Display Movie Info from Omdb API here -->
+                    <div class="row">
+                        <div id="poster-view" class="col-sm-12 col-md-5 pr-3">
+                            <!-- Poster -->
+                        </div>
+                        <div id="movie-info-view" class="col-sm-12 col-md-7">
+                            <!-- Movie Info -->
+                        </div>
                     </div>
-                    <div id="movie-info-view" class="col-sm-12 col-md-7">
-                        <!-- Movie Info -->
-                    </div>
-
+                </div>
+                <div id="gifs-view" class="col-sm-12 col-md-8">
+                    <!-- Display Gifs from GIPHY API here -->
                 </div>
             </div>
-            <div id="gifs-view" class="col-sm-12 col-md-8">
-                <!-- Display Gifs from GIPHY API here -->
-            </div>
-
-
         </div>
-    </div>
 
-    <div class="container-fluid">
+
+
+        <!-- Row 5: Display Your Favorites-->
         <div id="fav-gif-result" class="row px-3 py-3">
-            <section class="col-md-12">
+            <div class="col-md-12">
                 <h6><i class="far fa-heart"></i> Your Favorite Gifs:</h6>
+                <hr>
                 <div id="fav-gifs-view">
                     <!-- Display Your Favorite Gifs from GIPHY API here -->
                 </div>
-
-            </section>
+            </div>
         </div>
 
+        <!-- Row 6: Footer -->
         <div class="row">
             <div class="col-sm-12 text-center">
                 <hr>
                 <small>“Everything I learned I learned from the movies.” ― Audrey Hepburn</small>
             </div>
         </div>
+
     </div>
+
 
 
 

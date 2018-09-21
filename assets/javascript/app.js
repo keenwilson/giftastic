@@ -1,12 +1,11 @@
 // FUNCTIONS to render movie titles from our topics array
 // ==========================================================
 
-var movies = ["Mamma Mia!", "crazy rich asians", "love actually", "about time", "la la land", "50 first dates", "notting hill", "500 days of summer"];
+var movies = ["Mamma Mia!", "crazy rich asians", "love actually", "about time", "50 first dates", "notting hill", "500 days of summer"];
 
 
-function renderButtons() {
+function renderInitialButtons() {
     $('#buttons-view').empty();
-
     for (var i = 0; i < movies.length; i++) {
 
         var movieBtn = $("<button>");
@@ -14,9 +13,37 @@ function renderButtons() {
         movieBtn.attr("data-movie", movies[i]);
         movieBtn.text(movies[i]);
         $('#buttons-view').append(movieBtn);
-
     }
 };
+renderInitialButtons();
+
+function renderButtons() {
+    $('#buttons-view').empty();
+    $('#added-movie-buttons-view').empty();
+
+    for (var i = 0; i < 8; i++) {
+
+        var movieBtn = $("<button>");
+        movieBtn.addClass("movie-btn mr-2 my-2 btn-outline-secondary btn-sm text-capitalize");
+        movieBtn.attr("data-movie", movies[i]);
+        movieBtn.text(movies[i]);
+        $('#buttons-view').append(movieBtn);
+    }
+
+
+    for (var i = 8; i < movies.length; i++) {
+
+        var movieBtn = $("<button>");
+        movieBtn.addClass("movie-btn mr-2 my-2 btn-outline-secondary btn-sm text-capitalize");
+        movieBtn.attr("data-movie", movies[i]);
+        movieBtn.text(movies[i]);
+        $('#added-movie-buttons-view').append(movieBtn);
+    }
+
+};
+
+
+$('#added-movie-buttons-view')
 
 $('#add-movie').on("click", function(e){
     e.preventDefault();
@@ -56,13 +83,14 @@ $('#add-movie').on("click", function(e){
 $('#clear-all').on("click", function(e){
     e.preventDefault();
     $('#buttons-view').empty();
+    $('#added-movie-buttons-view').empty();
     $('#gifs-view').empty();
     $('#poster-view').empty();
     $('#movie-info-view').empty();
     renderButtons();
 });
 
-renderButtons();
+
 
 // FUNCTIONS to call GIPHY and OMDB APIs when ".movie-btn" is clicked
 // ==========================================================
