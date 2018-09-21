@@ -17,62 +17,80 @@
     <!-- Link Customized CSS -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-    
+
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="row mt-3">
-            <div id="header-jumbotron" class="col-sm-12 jumbotron mb-0" >
-                <img class="motion-gif img-fluid float-left" src="assets/images/tickets_motion.webp" alt="tickets motion" id="tickets-motion" />
-                <h1 class="text-center text-uppercase float-left my-0">Movies Gif-Tastics</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="header-jumbotron" class="col-sm-12 jumbotron mb-0">
+                <img class="motion-gif img-fluid float-left" src="assets/images/tickets_motion.webp" alt="tickets motion"
+                    id="tickets-motion" />
+                <h3 class="text-center text-uppercase float-left my-0">Movies Gif-Tastics</h3>
                 <br>
-                <small id="powered-by" class="float-right">Powered by <a target="_blank" href="https://developers.giphy.com/">GIPHY API</a> and <a target="_blank" href="https://www.omdbapi.com/">OMDb API</a></small>
+                <small id="powered-by" class="float-right">Powered by <a target="_blank" href="https://developers.giphy.com/">GIPHY
+                        API</a> and <a target="_blank" href="https://www.omdbapi.com/">OMDb API</a></small>
             </div>
         </div>
 
         <div id="movies-title" class="row px-3 py-3">
-            <div class="col-sm-12 col-md-8">
-                <h4> Featured Movies: </h4>
+            <div class="col-sm-12 col-md-9">
+                <h5><i class="fas fa-film"></i> Featured Movies: </h5>
                 <div id="buttons-view">
                     <!-- Movie Titles will be added here. -->
-                    
-                </div> 
+
+                </div>
             </div>
-            <div id="add-movie-form"  class="col-sm-12 col-md-4 py-2">
+            <div id="add-movie-form" class="col-sm-6 col-md-3 py-2">
                 <form role="form">
                     <div class="form-group">
                         <label for="c">
-                                <img class="motion-gif" src="assets/images/popcorn_motion.webp" alt="popcorn motion" id="popcorn-motion" />
-                                <h5 id="add-a-movie-title">Add a Movie Title</h5>
+                            <img class="motion-gif float-left" src="assets/images/popcorn_motion.webp" alt="popcorn motion" id="popcorn-motion" />
+                            <h5 id="add-a-movie-title" class="float-left">Add a Movie Title</h5>
                         </label>
                         <input type="text" id="movie-input" class="form-control mb-2">
                     </div>
-                        <button id="add-movie" type="submit" class="btn btn-light btn-sm mr-2"><i class="fas fa-film"></i> Add a Movie</button>
+                    <button id="add-movie" type="submit" class="btn btn-light btn-sm mr-2 mb-2"><i class="fas fa-film"></i>
+                        Add a Movie</button>
 
-                        <button class="btn btn-light btn-sm " id="clear-all"><i class="fas fa-eraser"></i> Clear Results</button>
-                    
+                    <button class="btn btn-light btn-sm " id="clear-all"><i class="fas fa-eraser"></i> Clear Results</button>
+
                 </form>
             </div>
         </div>
 
         <div id="display-result" class="row px-3 py-3">
-            <div id="movies-view" class="col-sm-7 ">
+            <div id="movies-view" class="col-sm-12 col-md-4 ">
+
                 <!-- Display Movie Info from Omdb API here -->
                 <div class="row">
-                    <div id="poster-view" class="col-md-4 pr-3">
+                    <div id="poster-view" class="col-sm-12 col-md-5 pr-3">
                         <!-- Poster -->
                     </div>
-                    <div id="movie-info-view" class="col-md-8">
+                    <div id="movie-info-view" class="col-sm-12 col-md-7">
                         <!-- Movie Info -->
                     </div>
 
                 </div>
             </div>
-            <div id="gifs-view" class="col-sm-5">
+            <div id="gifs-view" class="col-sm-12 col-md-8">
                 <!-- Display Gifs from GIPHY API here -->
             </div>
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div id="fav-gif-result" class="row px-3 py-3">
+            <section class="col-md-12">
+                <h6><i class="far fa-heart"></i> Your Favorite Gifs:</h6>
+                <div id="fav-gifs-view">
+                    <!-- Display Your Favorite Gifs from GIPHY API here -->
+                </div>
+
+            </section>
         </div>
 
         <div class="row">
@@ -81,8 +99,9 @@
                 <small>“Everything I learned I learned from the movies.” ― Audrey Hepburn</small>
             </div>
         </div>
-
     </div>
+
+
 
 
     <!-- Link jQuery -- jQuery must come first, then Popper.js, and then our JavaScript plugins.-->
