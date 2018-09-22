@@ -21,7 +21,7 @@ function renderButtons() {
     $('#buttons-view').empty();
     $('#added-movie-buttons-view').empty();
 
-    for (var i = 0; i < 8; i++) {
+    for (var i = 0; i < 6; i++) {
 
         var movieBtn = $("<button>");
         movieBtn.addClass("movie-btn mr-2 my-2 btn-outline-secondary btn-sm text-capitalize");
@@ -43,7 +43,6 @@ function renderButtons() {
 };
 
 
-$('#added-movie-buttons-view')
 
 $('#add-movie').on("click", function(e){
     e.preventDefault();
