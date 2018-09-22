@@ -1,5 +1,5 @@
 # Movies GifTastic | Giphy & OMDb APIs
-Integrated the features of GIPHY's search engine and the OMDb (open movie database) into the app by using the Giphy API and the OMDb API to make a dynamic web page that popultes with gifs and snippets of information about the movie of your choice.
+Integrated the features of GIPHY's search engine and the OMDb (open movie database) into the app by calling the data from GIPHY's API and the OMDb API. Utilized jQuery to show the user Giphy and OMDb results based on their search term and make a dynamic web page that popultes with gifs and snippets of information about the movie of their choice. This app also allows users to add their favorite gifs to a favorites section that persists even when they select or add a new topic.
 
 ## How This Application Works
 

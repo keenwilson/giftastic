@@ -1,3 +1,4 @@
+
 // FUNCTIONS to render movie titles from our topics array
 // ==========================================================
 
@@ -21,7 +22,7 @@ function renderButtons() {
     $('#buttons-view').empty();
     $('#added-movie-buttons-view').empty();
 
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < 6; i++) {
 
         var movieBtn = $("<button>");
         movieBtn.addClass("movie-btn mr-2 my-2 btn-outline-secondary btn-sm text-capitalize");
@@ -31,7 +32,7 @@ function renderButtons() {
     }
 
 
-    for (var i = 7; i < movies.length; i++) {
+    for (var i = 8; i < movies.length; i++) {
 
         var movieBtn = $("<button>");
         movieBtn.addClass("movie-btn mr-2 my-2 btn-outline-secondary btn-sm text-capitalize");
@@ -316,37 +317,3 @@ function updateMoviesView(response) {
  
 };
 
-
-/**
- *    for (var i = 0; i < results.length; i++) {
-        var gifDiv = $("<div class='my-3'>");
-        var gifRating = $("<small>").text("Rating: " + results[i].rating);
-        var gifImg = $("<img>");
-        gifImg.attr({
-            "src": results[i].images.fixed_height_still.url,
-            "data-still": results[i].images.fixed_height_still.url,
-            "data-animated": results[i].images.fixed_height.url,
-            "data-state": 'still',
-            "class": "gif",
-        })       
-
-        var gifFavourite = $('<button class="fav-gif">');
-        gifFavourite.addClass('btn btn-light btn-sm')
-        gifFavourite.append('<i class="far fa-heart"></i> Add To Favorites');
-        gifFavourite.attr({
-            "data-rating": results[i].rating,
-            "data-src": results[i].images.fixed_height_still.url,
-            "data-still": results[i].images.fixed_height_still.url,
-            "data-animated": results[i].images.fixed_height.url,
-            "data-state": 'still',
-            "data-class": "gif",
-        })
-
-        gifDiv.append(gifImg);
-        gifDiv.append("<br>")
-        gifDiv.append(gifRating);
-        gifDiv.append("<br>")
-        gifDiv.append(gifFavourite);
-        gifDiv.append("<br>")
-        $('#gifs-view').prepend(gifDiv);
- */
