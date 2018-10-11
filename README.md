@@ -13,7 +13,7 @@
 * _Pausing Gifs_: The user can stop/start animation by clicking on the gifs
 
 ![Favorite gifs](./assets/screenshots/giftastic-favorite.png)
-* The user can add gifs to a favorites section that persists even when they select or add a new topic.
+* The user can favorite the gifs and add them to a favorites section that persists even when they select or add a new topic.
 
 ---
 ## Behind the Application
